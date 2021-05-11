@@ -17,13 +17,9 @@
 </head>
 <body>
 	<div class="container">
-<?php include("header.php"); ?>
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "12345678";
-$dbname = "wisdom1";
+<?php include("menu.php");
 
+include("detabase.php");
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -38,10 +34,10 @@ $result = $conn->query($sql);
 <?php
 if ($result->num_rows > 0) {
   echo "<table class='table table-striped table-hover'>";
-  echo "<tr><td>消息</td><td>張貼時間</td></tr>";
+  echo "<tr><td>影片名稱</td><td>張貼時間</td></tr>";
   while($row = $result->fetch_assoc()) {
   	echo "<tr>";
-    echo "<td> " . $row["title"]."</td>";
+    echo "<td> <a href='play.php?id=" .  $row["id"] . "'>" . $row["title"]."</a></td>";
     echo "<td> " . $row["created"]."</td>";
     
    echo"</tr>";
@@ -56,7 +52,7 @@ $conn->close();
 
 
 </div>
-<?php include("footer.php"); ?>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<?php include("footer.php"); 
+?>
 </body>
 </html>

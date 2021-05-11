@@ -1,11 +1,18 @@
-<h1>歡迎懶惰蟲蟲智慧的星球</h1>
-<a href='/wisdom.php' class="btn btn-outline-primary">HOME</a>
-<a href='https://jp.nkust.edu.tw/'  class="btn btn-outline-secondary">應日系</a>
-<a href='http://tzukuan.nkust.org/' class="btn btn-outline-success">苗圃計畫</a>
-<a href='/wisdom.php/videoindex.php ' class="btn btn-outline-info">我的影片</a>
-<select onchange='location.href="/wisdom.php/"+this.value'>
- <option value="0323-1.php">請選擇要執行的練習</option>	
- <option value="0323-1.php">0323-1</option>	
- <option value="0330-1.php">0330-1</option>	
-</select>
-<hr>
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>葉智慧的網頁</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+<style>
+	body {
+   {
+  font-family:微軟正黑體 ;
+   }
+</style>
+</head>
+<body>
